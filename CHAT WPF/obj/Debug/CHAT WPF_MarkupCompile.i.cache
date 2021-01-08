@@ -1,0 +1,20 @@
+﻿CHAT WPF
+
+
+winexe
+C#
+.cs
+C:\Users\ADMIN\Desktop\K-1.0.11\K\CHAT WPF\obj\Debug\
+CHAT_WPF
+none
+false
+DEBUG;TRACE
+C:\Users\ADMIN\Desktop\K-1.0.11\K\CHAT WPF\App.xaml
+66-939835529
+1-1915725963
+94-691482405
+1541625272819
+Addfriend.xaml;AddFriendGroup.xaml;ContactTab.xaml;ConversationControl.xaml;CreateGroup.xaml;DownloadFile.xaml;FileBox.xaml;FileTab.xaml;GUIs\BigLoadingControl.xaml;GUIs\ContactInformationControl.xaml;GUIs\ContactItemControl.xaml;GUIs\ContactSuggestItemControl.xaml;GUIs\ContactTabControl.xaml;GUIs\ConversationBoxControl.xaml;GUIs\ConversationItemControl.xaml;GUIs\ConversationTabControl.xaml;GUIs\ConversationUserEnteringControl.xaml;GUIs\ConversationInvitationItemControl.xaml;GUIs\ConversationInvitationWindow.xaml;GUIs\CreateNewGroupChat.xaml;GUIs\CreateNewGroupChatItemController.xaml;GUIs\FileRecentBox.xaml;GUIs\FileItemControl.xaml;GUIs\FileDownload.xaml;GUIs\FileRecent.xaml;GUIs\FileTab.xaml;GUIs\MessageFileControl.xaml;GUIs\MessageImageControl.xaml;GUIs\MessageStickerControl.xaml;GUIs\NotificationFriendshipRequestControl.xaml;GUIs\NotificationConversationRequestControl.xaml;GUIs\NotificationSystemControl.xaml;GUIs\NotificationTabControl.xaml;GUIs\ReceivedMessageControl.xaml;GUIs\SentMessageControl.xaml;GUIs\SlideKchat.xaml;GUIs\SmallLoadingControl.xaml;GUIs\EmojiControl.xaml;GUIs\SystemMesageControl.xaml;GUIs\StickerControl.xaml;GUIs\ToolbarUserControl.xaml;GUIs\UpdateInfomation.xaml;GUIs\UploadFileControl.xaml;GUIs\UploadImageControl.xaml;icon_emoji_usercontrol.xaml;icon_sticker_usercontrol.xaml;InfoBox.xaml;InfoFriend.xaml;InfoUpdate.xaml;ListContactControl.xaml;ListFileBox.xaml;Loading.xaml;LoadingSmall.xaml;login.xaml;MainWindow.xaml;MessageContainer.xaml;MessageTab.xaml;NotificationBox.xaml;NotificationList.xaml;NotificationTab.xaml;RecentFile.xaml;SuggestFriendControl.xaml;Upload_file_usercontrol.xaml;Upload_image_usercontrol.xaml;UserControlMessageReceived.xaml;UserControlMessageSent.xaml;
+
+True
+

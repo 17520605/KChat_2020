@@ -1,0 +1,198 @@
+﻿<UserControl x:Class="CHAT_WPF.GUIs.NotificationTabControl"
+              xmlns:local="clr-namespace:CHAT_WPF.GUIs"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            Height="600" Width="1000">
+    <Grid Loaded="_Event_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="730"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="MessagePanel" Grid.Column="0"  Background="#FFFF">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Margin="10 15" Foreground="#FF0085F3" Text="Thông báo mới" FontSize="16"/>
+                    <StackPanel Grid.Row="1">
+                        <Separator Background="#FF0093F9" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0 15 0 0" VerticalAlignment="Center">
+                    <StackPanel>
+                        <Grid x:Name="FriendButton" Height="60" PreviewMouseLeftButtonDown="_Event_FriendButton_Click" MouseEnter="_Event_FriendButton_MouseEnter" MouseLeave="_Event_FriendButton_MouseLeave">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Width="40" Height="40" VerticalAlignment="Center" CornerRadius="80" BorderThickness="1" BorderBrush="#FFDFDFDF">
+                                <Border.Background>
+                                    <ImageBrush x:Name="Avatar" ImageSource="/CHAT WPF;component/Asset/friendship.png"/>
+                                </Border.Background>
+                            </Border>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                <TextBlock Text="Friend request" FontSize="15" Margin="10 0" Foreground="Black"/>
+                            </StackPanel>
+                            <Border x:Name="FriendNotifBorder" Visibility="Collapsed" Grid.Column="2" Width="25" Height="25" CornerRadius="15" Background="{StaticResource PrimaryHueDarkBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5 5 15 5">
+                                <TextBlock x:Name="FriendNotifCount"  FontSize="11" Text="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+
+                        <Grid x:Name="ConversationButton" Height="60" PreviewMouseLeftButtonDown="_Event_ConversationButton_Click" MouseEnter="_Event_ConversationButton_MouseEnter" MouseLeave="_Event_ConversationButton_MouseLeave">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="160"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Width="50" Height="50">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/CHAT WPF;component/Asset/addgroup.png" Stretch="UniformToFill"/>
+                                </Border.Background>
+                            </Border>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                <TextBlock Text="Group invitation" FontSize="15" Margin="10 0" Foreground="Black"/>
+                            </StackPanel>
+                            <Border x:Name="GroupNotifBorder" Visibility="Collapsed" Grid.Column="2" Width="25" Height="25" CornerRadius="15" Background="{StaticResource PrimaryHueDarkBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5 5 15 5">
+                                <TextBlock x:Name="GroupNotifCount" FontSize="11" Text="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                        <Grid x:Name="SystemButton" Height="60" PreviewMouseLeftButtonDown="_Event_System_Click" MouseEnter="_Event_system_MouseEnter" MouseLeave="_Event_system_MouseLeave">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="160"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Width="40" Height="40" Margin="10">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/CHAT WPF;component/Asset/systemicon.png"/>
+                                </Border.Background>
+                            </Border>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,20">
+                                <TextBlock Text="Notifiacation System " FontSize="15" Margin="10 0" Foreground="Black"/>
+                            </StackPanel>
+                            <Border x:Name="SystemNotifBorder" Visibility="Collapsed" Grid.Column="2" Width="26" Height="24" CornerRadius="15" Background="{StaticResource PrimaryHueDarkBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12.665,18,-8,18" Grid.ColumnSpan="2">
+                                <TextBlock x:Name="SystemNotifCount" FontSize="11" Text="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            <StackPanel x:Name="ConversationListBox"></StackPanel>
+        </StackPanel>
+        <Grid x:Name="NotificationTab" Grid.Column="1" Background="#F4F5F7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid Height="80" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid HorizontalAlignment="Left" Margin="10 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="50*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Width="40" Height="40" CornerRadius="25">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/CHAT WPF;component/Asset/bell.png"/>
+                                </Border.Background>
+                            </Border>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                <TextBlock Text="Notications" FontSize="20" FontWeight="Bold" Foreground="#FF1A89DA" Margin="10 0"/>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <StackPanel x:Name="NotificationContainer" Grid.Row="1">
+
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="FriendshipRequestTab"  Grid.Column="1" Background="#F4F5F7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid Height="80" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid HorizontalAlignment="Left" Margin="10 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Width="40" Height="40" CornerRadius="25">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/CHAT WPF;component/Asset/bell.png"/>
+                                </Border.Background>
+                            </Border>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                <TextBlock Text="Friendship Requests" FontSize="20" FontWeight="Bold" Foreground="#FF1A89DA" Margin="10 0"/>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <StackPanel x:Name="FriendRequestContainer" Grid.Row="1">
+
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="ConversationInvitationTab" Grid.Column="1" Background="#F4F5F7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid Height="80" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid HorizontalAlignment="Left" Margin="10 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Width="40" Height="40" CornerRadius="25">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/CHAT WPF;component/Asset/bell.png"/>
+                                </Border.Background>
+                            </Border>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                <TextBlock Text="Conversation Invitations" FontSize="20" FontWeight="Bold" Foreground="#FF1A89DA" Margin="10 0"/>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <StackPanel x:Name="ConversationRequestContainer" Grid.Row="1">
+
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="NotificationImgContainer" Grid.Column="1">
+            <local:SlideKchat></local:SlideKchat>
+        </Grid>
+    </Grid>
+</UserControl>

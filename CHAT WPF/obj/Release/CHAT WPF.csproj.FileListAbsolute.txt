@@ -1,0 +1,61 @@
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\CHAT WPF.exe.config
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\CHAT WPF.exe
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\CHAT WPF.pdb
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\FireSharp.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\MaterialDesignColors.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\MaterialDesignThemes.Wpf.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Microsoft.Threading.Tasks.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Microsoft.Threading.Tasks.Extensions.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Newtonsoft.Json.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\System.Net.Http.Extensions.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\System.Net.Http.Primitives.dll
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\MaterialDesignColors.pdb
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\MaterialDesignThemes.Wpf.pdb
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\MaterialDesignThemes.Wpf.xml
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Microsoft.Threading.Tasks.xml
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Microsoft.Threading.Tasks.Extensions.xml
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\Newtonsoft.Json.xml
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\System.Net.Http.Extensions.xml
+D:\Visual Studio Projects\KChat\CHAT WPF\bin\Release\System.Net.Http.Primitives.xml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.csproj.App.config
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.csprojAssemblyReference.cache
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\Addfriend.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\AddFriendGroup.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\ConversationControl.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CreateGroup.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\InfoFriend.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\InfoUpdate.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\ListContactControl.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\login.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\MainWindow.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\Sigup.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\SuggestFriendControl.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\UserControlMessageReceived.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\UserControlMessageSent.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\App.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF_MarkupCompile.cache
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF_MarkupCompile.lref
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\App.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\Addfriend.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\AddFriendGroup.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\ConversationControl.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CreateGroup.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\InfoFriend.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\InfoUpdate.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\ListContactControl.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\login.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\MainWindow.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\Sigup.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\SuggestFriendControl.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\UserControlMessageReceived.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\UserControlMessageSent.baml
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.g.resources
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT_WPF.Properties.Resources.resources
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.csproj.GenerateResource.cache
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.csproj.CopyComplete
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.exe
+D:\Visual Studio Projects\KChat\CHAT WPF\obj\Release\CHAT WPF.pdb

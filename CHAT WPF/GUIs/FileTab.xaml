@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="CHAT_WPF.GUIs.FileTab"
+            xmlns:local="clr-namespace:CHAT_WPF.GUIs"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            Height="600" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="730"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="MessagePanel" Grid.Column="0"  Background="#FFFFFF">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Margin="10 15" Foreground="#FF0085F3" Text="File của bạn" FontSize="16"/>
+                    <StackPanel Grid.Row="1">
+                        <Separator Background="#FF0093F9" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0">
+                    <StackPanel>
+                        <local:FileRecent></local:FileRecent>
+                        <local:FileDownload></local:FileDownload>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            <StackPanel x:Name="ConversationListBox"></StackPanel>
+        </StackPanel>
+        <Grid Grid.Column="1">
+            <Grid x:Name="FlieRecentTab" Background="#F4F5F7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid Height="80" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition ></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid>
+                            <Grid HorizontalAlignment="Left" Margin="10 0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="400"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Width="40" Height="40" CornerRadius="25">
+                                    <Border.Background>
+                                        <ImageBrush ImageSource="/CHAT WPF;component/Asset/Dowload.jpg"/>
+                                    </Border.Background>
+                                </Border>
+                                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                    <TextBlock Text="Download File" FontSize="20" FontWeight="Bold" Foreground="#FF10ADF5" Margin="10 0"/>
+                                </StackPanel>
+                                
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Column="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="1" x:Name="UploadImageButton" HorizontalAlignment="Center" Click="_Event_OpenFolderButton_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF10ADF5" Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                                <materialDesign:PackIcon  VerticalAlignment="Center" HorizontalAlignment="Center" Kind="Folder" ToolTip="Open folder "  Height="35" Width="35"/>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1" Height="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <TextBlock HorizontalAlignment="Left" Margin="15 0 0 0" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="Gray">Type Name</TextBlock>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <TextBlock HorizontalAlignment="Left" Margin="15 0 0 0" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="Gray">Time</TextBlock>
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <TextBlock HorizontalAlignment="Left" Margin="15 0 0 0" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="Gray">size</TextBlock>
+                    </Grid>
+                </Grid>
+                <ScrollViewer Grid.Row="2" Height="490">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel x:Name="FileRecentContainer" Grid.Row="0" Height="auto" Orientation="Vertical">
+
+                        </StackPanel>
+                        <StackPanel x:Name="FileLocalContainer" Grid.Row="1" Height="auto" Orientation="Vertical">
+
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

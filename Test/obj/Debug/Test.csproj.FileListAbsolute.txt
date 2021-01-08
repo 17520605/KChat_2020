@@ -1,0 +1,7 @@
+D:\Visual Studio Projects\KCHAT-WPF-minhkhai-10-11-2020\Test\bin\Debug\Test.exe.config
+D:\Visual Studio Projects\KCHAT-WPF-minhkhai-10-11-2020\Test\bin\Debug\Test.exe
+D:\Visual Studio Projects\KCHAT-WPF-minhkhai-10-11-2020\Test\bin\Debug\Test.pdb
+D:\Visual Studio Projects\KCHAT-WPF-minhkhai-10-11-2020\Test\obj\Debug\Test.csprojAssemblyReference.cache
+D:\Visual Studio Projects\KCHAT-WPF-minhkhai-10-11-2020\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\KCHAT-WPF-minhkhai-10-11-2020\Test\obj\Debug\Test.exe
+D:\Visual Studio Projects\KCHAT-WPF-minhkhai-10-11-2020\Test\obj\Debug\Test.pdb

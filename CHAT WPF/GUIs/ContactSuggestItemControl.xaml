@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="CHAT_WPF.GUIs.ContactSuggestItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:CHAT_WPF.GUIs"
+             mc:Ignorable="d">
+    <Grid x:Name="Wrapper" Loaded="_Event_Loaded" Height="60" PreviewMouseDown="_Event_PreviewMouseDown" MouseEnter="_Event_SuggestItem_MouseEnter" MouseLeave="_Event_SuggestItem_MouseLeave">
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="160"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Width="40" Height="40" CornerRadius="25" BorderBrush="#FFB7B7B7" BorderThickness="0.6">
+                <Border.Background>
+                    <ImageBrush x:Name="Avatar" ImageSource="/CHAT WPF;component/Asset/loadf (1).gif"/>
+                </Border.Background>
+
+            </Border>
+            <Border Width="10" Height="10" VerticalAlignment="Bottom" Margin="0,0,11,5.6" HorizontalAlignment="Right" CornerRadius="15" Background="#00CC00"/>
+
+            <StackPanel Grid.Column="1">
+                <TextBlock x:Name="FullName" Text="Nguyễn Văn A" Foreground="Black" FontSize="14" Margin="10 10 10 0"/>
+                <TextBlock Text="From friend suggestion" Foreground="Gray" Margin="10 0 10 0" TextTrimming="CharacterEllipsis" Opacity="0.6" FontSize="11"/>
+            </StackPanel>
+
+            <Button x:Name="AddFriendButton" Visibility="Hidden"  Click="_Event_Click" Grid.Column="2" Margin="10 0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                <materialDesign:PackIcon  VerticalAlignment="Center" HorizontalAlignment="Center" Kind="AccountPlus" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="Sent" Visibility="Hidden"   Grid.Column="2" Margin="10 0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                <materialDesign:PackIcon  VerticalAlignment="Center" HorizontalAlignment="Center" Kind="AccountConvert" Height="20" Width="20"/>
+            </Button>
+            <Button x:Name="Waitting" Visibility="Hidden"  Grid.Column="2" Margin="10 0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                <materialDesign:PackIcon  VerticalAlignment="Center" HorizontalAlignment="Center" Kind="AccountCheck" Height="20" Width="20"/>
+            </Button>
+            <local:SmallLoadingControl x:Name="Loading" Grid.Column="2" Visibility="Collapsed" VerticalAlignment="Center" HorizontalAlignment="Center"></local:SmallLoadingControl>
+            <!--<TextBlock x:Name="FriendshipStatus" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>-->
+        </Grid>
+    </Grid>
+</UserControl>
